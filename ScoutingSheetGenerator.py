@@ -39,7 +39,7 @@ for team_info in all_teams:
     # Pull the key for the team
     team_key = team_info['key']
     # Get the number for the team (as a str)
-    team_number = team_info["team_number"]
+    team_number = str(team_info["team_number"])
 
     # Get the data for the team at the event
     team_matches = api.getTeamEventData(team_key).json()
