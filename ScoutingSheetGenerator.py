@@ -2,7 +2,6 @@ from BlueAllianceAPI_Interface import BlueAllianceAPI
 import pandas as pd
 import re
 from copy import deepcopy
-from pandas.io.formats import excel
 
 # Year to pull data from
 year = 2024
@@ -94,7 +93,7 @@ for team_info in all_teams:
 
 
 # Generate excel writer to form a writers
-with pd.ExcelWriter(f'{output_file}.xlsx', engine='xlsxwriter') as writer:
+with pd.ExcelWriter(f'bin/{output_file}.xlsx', engine='xlsxwriter') as writer:
     # Create a sheet for each team
     for team_numb, df in team_dataframes:
         # Do not print the headers or index
