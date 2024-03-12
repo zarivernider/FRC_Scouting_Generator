@@ -1,11 +1,13 @@
 import requests as rq
 import re
+from BlueAllianceAuthKey import TBA_Read_Auth_Key
 
 class BlueAllianceAPI:
-    # Base URL to reach the blue alliance
+    # Base URL for the API to reach the blue alliance
     base_url = "https://www.thebluealliance.com/api/v3"
-    # Authentication headers
-    headers = {"X-TBA-Auth-Key" : "1jqi04hmw6UnW7UG6Z0vYZBnwR1qr9ZxtEsPnEv5EdHqxRvOz9lUAuu7582FzAPs"}
+    # Headers for the API call
+        # X-TBA-Auth-Key : Authentication key to access the blue alliance
+    headers = {"X-TBA-Auth-Key" : TBA_Read_Auth_Key}
 
     event_key = "2024mabri"
     year = 2024
