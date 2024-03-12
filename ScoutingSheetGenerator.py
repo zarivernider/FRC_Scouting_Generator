@@ -58,8 +58,7 @@ for team_info in all_teams:
     # Form the dataframe for the header data 
     header_data = [team_number, 
                    team_info['nickname'], 
-                   f"{team_info['city']}, 
-                   {team_info['state_prov']}"]
+                   f"{team_info['city']}, {team_info['state_prov']}"]
     header_df = pd.DataFrame([base_header_info, header_data, []])
 
     # Start with an empty row as a buffer to not scrunch up the data
