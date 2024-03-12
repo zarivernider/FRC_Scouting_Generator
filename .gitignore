@@ -1,0 +1,8 @@
+# Remove cache
+__pycache__
+
+# Remove all Excel documents from being pushed to git
+*.xlsx
+
+# Remove all CSV from being pushed to git
+*.csv

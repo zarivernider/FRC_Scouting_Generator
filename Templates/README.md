@@ -1,0 +1,1 @@
+Location for a .csv file to hold the user defined scouting questions. Make sure to reference the proper file in `ScoutingSheetGenerator.py`
