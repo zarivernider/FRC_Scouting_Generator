@@ -2,7 +2,6 @@ from BlueAllianceAPI_Interface import BlueAllianceAPI
 import pandas as pd
 import re
 from copy import deepcopy
-from pandas.io.formats import excel
 
 # Year to pull data from
 year = 2024
